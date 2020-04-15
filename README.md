@@ -17,14 +17,21 @@ between disaster tweets and non disaster tweets.
 2.Text data preprocessing.
 
 Remove Noise(punctuation, HTML,……)
+
 Lowercasing
+
       Make the same words in different cases can be treated as the same.
+      
 Remove stop words
-      Drop some extremely common words which would appear to be of little value in data analyzing.(Remove the words that are very commonly used in a given language,
-      we can focus on the important words instead.) 
+
+      Drop some extremely common words which would appear to be of little value in data analyzing.(Remove the words that are very commonly used in a given language, we can focus on the important words instead.) 
+      
 Tokenization
+
      Split an input sequence into tokens. A token can be a word, sentence, paragraph , etc. In this project, I just split sentences into words
+     
 Token normalization(Lemmatization    Stemming)
+
       Reduce inflectional forms and sometimes derivationally related forms of a word to a common base form. Eg: (am,are,is->>be)(car,cars,car’s,cars’->>car)
       In this project I use Lemmatization to normalize the token.
 
@@ -35,12 +42,18 @@ Bag of words (BOW), TF-IDF. In this project, I compared these two techniques wit
 4.Build different classification model.
 
 Four traditional model I used in this project.
+
 Logistic Regression 
+
 SVM 
+
 XGBoost 
+
 Naive Bayes
 
-5.Evaluating the perfoemances of different models.(Matrix: F1 score)
+5.Evaluating the perfoemances of different models.
+
+(Matrix: F1 score)
 
 The results show that Naive Bayes with TF-IDF text Vectorization performs best. The score ranks top 45% in this active competition .
 
